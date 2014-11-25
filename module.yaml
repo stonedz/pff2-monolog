@@ -1,0 +1,6 @@
+name: pff2-monolog
+version: "0.1"
+desc: Logger module
+class: Pff2Monolog
+requires:
+  - exception_handler

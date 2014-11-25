@@ -1,0 +1,11 @@
+moduleConf:
+  defaultChannelName: logger
+
+  fileLoggerEnabled: true
+  # DO NOT SPECIFY THE FILE EXTENSION (if you specify "myLogName" the file generated will be called 2014-10-25-myLogName.txt
+  fileLoggerName: logs
+
+  # DISABLE IN PRODUCTION (it also reads dev mode form config)
+  firePhPLoggerEnabled: true
+
+  addFileInfo: true

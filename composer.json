@@ -1,0 +1,27 @@
+{
+	"name": "stonedz/pff2-monolog",
+	"type": "pff2-module",
+	"description": "Logger module wrapped around monolog",
+	"license": "MIT",
+    "minimum-stability": "dev",
+	"keywords": [
+		"pff2", "module", "logger", "monolog"
+	],
+	"authors": [
+		{
+			"name": "Paolo Fagni",
+			"email": "paolo.fagni@gmail.com",
+			"role": "Developer"
+		}
+	],
+	"homepage": "https://github.com/stonedz/pff2-monolog",
+	"require": {
+		"stonedz/pff2-installers": "*",
+        "monolog/monolog": "~1"
+	},
+    "autoload": {
+        "psr-4": {
+            "pff\\modules\\": "src/"
+        }
+    }
+}
