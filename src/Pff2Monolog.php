@@ -67,11 +67,25 @@ class Pff2Monolog extends AModule implements IConfigurableModule{
     }
 
     /**
-     * @param $message Message to log
-     * @param $level Level to log
+     * @param string $message Message to log
+     * @param int $level Level to log
      * @param array $context
      */
     public function log($message, $level, array $context = array()) {
+        if($level<100) {
+            if($level == 0) {
+                $level = Logger::INFO;
+            }
+            elseif($level == 1) {
+                $level = Logger::ERROR;
+            }
+            elseif($level == 2){
+                $level == Logger::CRITICAL;
+            }
+            else {
+                $level = Logger::INFO;
+            }
+        }
         $this->monolog->log($level, $message, $context);
     }
 
