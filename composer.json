@@ -17,8 +17,11 @@
 	"homepage": "https://github.com/stonedz/pff2-monolog",
 	"require": {
 		"stonedz/pff2-installers": "*",
-        "monolog/monolog": "~1"
+        "monolog/monolog": "~2"
 	},
+    "require-dev": {
+        "stonedz/pff2": "3.0.x-dev"
+    },
     "autoload": {
         "psr-4": {
             "pff\\modules\\": "src/"
